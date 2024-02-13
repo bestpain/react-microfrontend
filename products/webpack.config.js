@@ -3,6 +3,9 @@ const ModuleFederationPlugin = require('webpack/lib/container/ModuleFederationPl
 
 module.exports = {
     mode: 'development',
+    output : {
+        uniqueName: 'product',
+    },
     devServer: {
         port: 8081
     },

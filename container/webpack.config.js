@@ -8,9 +8,10 @@ module.exports = {
             template: './public/index.html'
         }),
         new ModuleFederationPlugin({
-            name:'container',
-            remotes:{
-                productsApp:'product@http://localhost:8081/remoteEntry.js'
+            name: 'container',
+            remotes: {
+                productsApp: 'product@http://localhost:8081/remoteEntry.js',
+                cartsApp: 'carts@http://localhost:8082/remoteEntry.js'
             }
         })
     ],
