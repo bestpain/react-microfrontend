@@ -17,8 +17,9 @@ module.exports = {
             name:'product',
             filename:'remoteEntry.js',
             exposes:{
-                './ProductsIndex':'./src/index'
-            }
+                './ProductsIndex':'./src/bootstrap'
+            },
+            shared: ['@faker-js/faker']
         })
     ]
 }
